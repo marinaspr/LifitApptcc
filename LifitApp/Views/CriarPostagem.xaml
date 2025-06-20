@@ -1,0 +1,33 @@
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="LiftApp.Views.CriarPostagem"
+    BackgroundColor="White">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="12">
+
+            <Frame BackgroundColor="#90E05E" CornerRadius="10" Padding="15">
+
+                <VerticalStackLayout Spacing="10">
+
+                    <Image Source="corrida.jpg" HeightRequest="200" />
+
+                    <Entry x:Name="TituloEntry" Placeholder="Título" />
+                    <Entry x:Name="DescricaoEntry" Placeholder="Descrição" />
+                    <Entry x:Name="LocalEntry" Placeholder="Local" />
+                    <Entry x:Name="HorarioEntry" Placeholder="Horário" />
+
+                    <Button Text="Postar"
+                            BackgroundColor="White"
+                            TextColor="#90E05E"
+                            Clicked="OnPostarClicked" />
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

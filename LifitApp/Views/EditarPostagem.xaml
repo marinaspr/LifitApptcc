@@ -1,0 +1,18 @@
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="LifitApp.Views.EditarPostagem"
+    BackgroundColor="#90E05E">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="12">
+            <Label Text="Editar Postagem" FontSize="24" HorizontalOptions="Center"/>
+            <Entry x:Name="TituloEntry" Placeholder="Título"/>
+            <Entry x:Name="DescricaoEntry" Placeholder="Descrição"/>
+            <Entry x:Name="LocalEntry" Placeholder="Local"/>
+            <Entry x:Name="HorarioEntry" Placeholder="Horário"/>
+            <Button Text="Salvar Alterações" BackgroundColor="White" TextColor="#90E05E"
+                    Clicked="OnSalvarClicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

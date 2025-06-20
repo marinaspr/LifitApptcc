@@ -1,0 +1,27 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LifitApp.MainPage"
+             Title="Lifit App">
+
+    <VerticalStackLayout Padding="30" Spacing="20" VerticalOptions="Center">
+
+        <Label Text="Bem-vindo ao Lifit!"
+               FontSize="32"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="#90E05E" />
+
+        <Button Text="Criar nova postagem"
+                Clicked="OnCriarClicked"
+                BackgroundColor="#90E05E"
+                TextColor="White"
+                CornerRadius="12" />
+
+        <Button Text="Ver postagens"
+                Clicked="OnVerPostagensClicked"
+                BackgroundColor="#90E05E"
+                TextColor="White"
+                CornerRadius="12" />
+
+    </VerticalStackLayout>
+</ContentPage>
